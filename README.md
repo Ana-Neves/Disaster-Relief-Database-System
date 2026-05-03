@@ -192,7 +192,7 @@ Desenvolvedor Fullstack - Knowledge Manager
 
 ![Ana](https://avatars.githubusercontent.com/u/97240075?v=4)
 **Ana Caroline Neves**
-Fullstack Developer - Colaboradora
+Fullstack Developer - Contributor
 
 - GitHub: [Ana-Neves](https://github.com/Ana-Neves)
 - LinkedIn: [Ana](https://www.linkedin.com/in/ana-caroline-neves-fullstack/)
@@ -200,7 +200,7 @@ Fullstack Developer - Colaboradora
 
 ![Beatriz](https://avatars.githubusercontent.com/u/141242413?v=4)
 **Beatriz**
-Fullstack Developer - Colaboradora
+Fullstack Developer - Contributors
 
 - GitHub: [l1Beatriz](https://github.com/l1Beatriz)
 - LinkedIn: [Beatriz](https://www.linkedin.com/in/beatrizsantos009?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
