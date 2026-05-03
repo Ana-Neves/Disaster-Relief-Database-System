@@ -1,71 +1,85 @@
 ![imagem para ilustração](assets/readme/banner.jpg)
 
-# Portal de Socorro e Apoio (PSA)
+# Relief and Support Portal (RSP)
 
-## Descrição da Organização
+## 📌 Organization Description
 
-O **Portal de Socorro e Apoio (PSA)** é uma plataforma inovadora e integrada, idealizada em resposta aos desastres recentes no Rio Grande do Sul, dedicada a fornecer assistência rápida e eficaz para pessoas em situação de vulnerabilidade, especialmente em casos de desastres naturais como enchentes, terremotos, incêndios e outras emergências. Desenvolvido para facilitar a gestão de recursos e a coordenação de ajuda humanitária, o PSA visa conectar doadores, voluntários e organizações de apoio para maximizar o impacto das ações de socorro.
+The **Relief and Support Portal (RSP)** is an innovative and integrated platform, conceived in response to recent disasters in Rio Grande do Sul. It is dedicated to providing fast and effective assistance to people in vulnerable situations, especially during natural disasters such as floods, earthquakes, fires, and other emergencies.
 
-## Missão
+Developed to streamline resource management and coordinate humanitarian aid, the RSP aims to connect donors, volunteers, and support organizations in order to maximize the impact of relief efforts.
 
-O PSA tem como missão salvar vidas e aliviar o sofrimento de pessoas afetadas por desastres, promovendo a solidariedade e a cooperação comunitária. A plataforma busca ser um ponto central de apoio, garantindo que recursos vitais cheguem rapidamente a quem mais precisa e que os esforços de ajuda sejam coordenados de forma eficaz e transparente.
+## 🎯 Mission
 
-Com o PSA, transformamos a solidariedade em ação, criando uma rede forte e eficiente de socorro e apoio em tempos de crise.
+The RSP’s mission is to save lives and alleviate the suffering of people affected by disasters by promoting solidarity and community cooperation.
 
-## Organização do Projeto
+The platform serves as a central hub for support, ensuring that vital resources quickly reach those who need them most, while keeping relief efforts efficient and transparent.
 
-Para garantir a eficiência e a transparência na execução do projeto, nossa equipe adotou uma série de ferramentas e métodos colaborativos:
+> With the RSP, we turn solidarity into action—building a strong and effective support network in times of crisis.
 
-* **Trello e Notion:** Utilizamos o Trello para gerenciar nossas tarefas e acompanhar o progresso das atividades. O Notion foi utilizado para documentar todos os aspectos do projeto, incluindo requisitos, diagramas, e decisões de design.
-* ![imagem para ilustração](assets/readme/trello.png)
-* **Reuniões via Discord:** Realizamos reuniões regulares via Discord para discutir o andamento do projeto, alinhar estratégias e tomar decisões importantes. Essas reuniões foram fundamentais para manter a comunicação entre os membros da equipe e resolver quaisquer dúvidas ou problemas que surgiram ao longo do caminho.
-* **Live Share para codificação:** Para facilitar a colaboração no desenvolvimento de código, utilizamos a extensão Live Share do Visual Studio Code. Isso permitiu que os membros da equipe trabalhassem simultaneamente no mesmo código, realizassem revisões de código em tempo real e resolvessem problemas de forma colaborativa.
+## 🧩 Project Organization
 
-Essas práticas ajudaram a manter o projeto organizado, promoveram uma comunicação eficaz e maximizaram a produtividade da equipe durante todo o processo de desenvolvimento.
+To ensure efficiency and transparency, our team adopted collaborative tools and workflows:
 
-## Estrutura do Projeto
+- **Trello & Notion**
+  - Trello was used for task management and progress tracking.
+  - Notion was used to document requirements, diagrams, and design decisions.
 
-### 1. Diagramas
+![Trello Board](assets/readme/trello.png)
 
-- **Diagrama Conceitual**: Representa as entidades principais e seus relacionamentos de alto nível.
-- **Diagrama Lógico**: Detalha a estrutura do banco de dados, incluindo tabelas, colunas, tipos de dados e relacionamentos.
+- **Discord Meetings**
+  - Regular meetings were held via Discord to align strategies, track progress, and resolve issues.
 
-### 2. Banco de Dados
+- **Live Share (VS Code)**
+  - Used for real-time collaborative coding, code reviews, and problem-solving.
 
-- **MySQL Workbench**: Utilizamos o MySQL Workbench para criar e gerenciar o banco de dados.
-- **Script SQL**: Incluímos um script SQL que contém todos os comandos necessários para criar o banco de dados e as tabelas, inserir dados de exemplo e realizar consultas básicas.
+These practices improved organization, communication, and overall team productivity.
 
-## Como Utilizar
+## 🏗️ Project Structure
 
-### Pré-requisitos
+### 📊 Diagrams
+
+- **Conceptual Diagram** – High-level representation of entities and relationships  
+- **Logical Diagram** – Detailed database structure (tables, columns, data types, relationships)
+
+### 🗄️ Database
+
+- **MySQL Workbench** – Database creation and management  
+- **SQL Script** – Includes:
+  - Database and table creation
+  - Sample data insertion
+  - Basic queries
+
+## ⚙️ How to Use
+
+### 📋 Prerequisites
 
 - [MySQL](https://www.mysql.com/downloads/)
 - [MySQL Workbench](https://www.mysql.com/products/workbench/)
 
-### Passos para Configuração
+### 🚀 Setup
 
-1. **Clone o Repositório**
-
+1. **Clone the repository**
    ```bash
    git clone https://github.com/Kerubink/Projeto-M3---PDA-.git
-   cd seu-repositorio
-   ```
-2. **Abrir o MySQL Workbench**
+   cd your-repository
+   
+2. **Open MySQL Workbench**
 
-   - Abra o MySQL Workbench e conecte-se ao seu servidor MySQL.
-3. **Importar o Script SQL**
+   - Connect to your MySQL server
+     
+3. **Import SQL Script**
 
-   - Navegue até o menu `File` > `Open SQL Script` e selecione o arquivo `database_script.sql` localizado no repositório clonado.
+  - Go to File `File` > `Open SQL Script` e selecione o arquivo `database_script.sql` localizado no repositório clonado.
 
    > `Para mais informações acesse o arquivo de instruções na pasta MySQL`
    >
-4. **Executar o Script**
+4. **Execute the Script**
 
-   - Execute o script SQL para criar o banco de dados e as tabelas necessárias.
+- Execute the SQL script to create the database and the necessary tables.
 
-### Consultas de Teste
+### Test Queries
 
-Após importar e executar o script SQL, você pode realizar algumas consultas de teste para garantir que o banco de dados foi configurado corretamente. Você pode encontrar mais consultas exemplos no arquivo `INSTRUCTIONS.md`.
+After importing and running the SQL script, you can perform some test queries to ensure the database has been configured correctly. You can find more example queries in the file. `INSTRUCTIONS.md`.
 
 ```sql
 -- Exemplo de consulta para verificar dados inseridos em uma tabela
@@ -78,45 +92,47 @@ JOIN Usuarios u ON d.UsuarioID = u.ID_Usuarios
 JOIN Instituicao i ON d.InstituicaoID = i.ID_Instituicao;
 ```
 
-## Estrutura do Banco de Dados
+## Database Structure
 
-### Algumas tabelas do nosso banco
+### Some tables in our database
 
-- **Agua_Potavel**
+- **Drinking_Water**
 
-  - `ID_Agua`: Identificador único.
-  - `Volume`: Volume em litros.
-  - `Data_de_Validade`: Data de validade da embalagem.
-  - `Nivel_de_Urgencia`: Nível de urgência (1 - Baixa, 2 - Média, 3 - Alta).
-  - `Embalagem`: Tipo de embalagem.
-  - `Descricao`: Descrição da água potável.
-  - `Fornecedor`: Nome do fornecedor.
-- **Alimentos**
-
-  - `ID_Alimentos`: Identificador único.
-  - `Nome`: Nome do alimento.
-  - `Categoria`: Categoria do alimento.
-  - `Data_de_Validade`: Data de validade do alimento.
-  - `Quantidade`: Quantidade em quilogramas.
-  - `Descricao`: Descrição do alimento.
-  - `Nivel_de_Urgencia`: Nível de urgência. (1 - Baixa, 2 - Média, 3 - Alta).
-  - `Fornecedor`: Nome do fornecedor.
-- **Usuarios**
-
-  - `ID_Usuarios`: Identificador único.
-  - `Nome_Usuarios`: Nome do usuário.
-  - `Email`: Email do usuário (único).
-  - `Endereco`: Endereço do usuário.
-  - `Tipo_de_Usuarios`: Tipo de usuário.
-  - `ID_Instituicao`: Identificador da instituição associada.
-- **Instituicao**
-
-  - `ID_Instituicao`: Identificador único.
-  - `Nome_Instituicao`: Nome da instituição.
-  - `Email`: Email da instituição.
-  - `Telefone`: Telefone da instituição.
-  - `Enderecos`: Endereço da instituição.
-  - `Descricao`: Descrição da instituição.
+  - `ID_Agua`: Unique identifier.
+  - `Volume`: Volume in liters.
+  - `Data_de_Validade`: Packaging expiration date.
+  - `Nivel_de_Urgencia`: Level of urgency (1 - Low, 2 - Medium, 3 - High).
+  - `Embalagem`: Packaging type.
+  - `Descricao`: Description of drinking water.
+  - `Fornecedor`: Supplier's name.
+    
+- **Food**
+  
+  - `ID_Alimentos`: Unique identifier.
+  - `Nome`: Name of the food.
+  - `Categoria`: Food category.
+  - `Data_de_Validade`: Food expiration date.
+  - `Quantidade`: Quantity in kilograms.
+  - `Descricao`: Food description.
+  - `Nivel_de_Urgencia`: Level of urgency. (1 - Low, 2 - Medium, 3 - High).
+  - `Fornecedor`: Supplier's name.
+    
+- **Users**
+  - `ID_Usuarios`: Unique identifier.
+ - `Username`: User's name.
+- `Email`: User's email (unique).
+- `Address`: User's address.
+- `UserType`: User type.
+- `Institution_ID`: Identifier of the associated institution.
+  
+- **Institution**
+- `ID_Institution`: Unique identifier.
+- `Institution_Name`: Institution name.
+- `Email`: Institution email.
+- `Phone`: Institution phone number.
+- `Addresses`: Institution address.
+- `Description`: Institution description.
+  
 - **Voluntarios**
 
   - `ID_Voluntario`: Identificador único.
@@ -127,21 +143,21 @@ JOIN Instituicao i ON d.InstituicaoID = i.ID_Instituicao;
   - `Telefone`: Telefone do voluntário.
   - `Descricao`: Descrição do voluntário.
 
-### Relacionamentos
+### Relationships
 
-- **Doacao**: Relaciona usuários, instituições e itens doados (água, alimentos, roupas, etc.).
-- **Instituicao_Voluntarios**: Relaciona instituições e voluntários.
-- **Instituicao_Assistencia**: Relaciona instituições e assistência técnica.
-- **Usuario_Instituicao**: Relaciona usuários e instituições.
+- **Donation**: Relates users, institutions, and donated items (water, food, clothing, etc.).
+- **Volunteer_Institution**: Relates institutions and volunteers.
+- **Assistance_Institution**: Relates institutions and technical assistance.
+- **Institution_User**: Relates users and institutions.
 
-## Conclusão
+## Conclusion
 
-Este projeto proporcionou uma compreensão mais profunda sobre a modelagem de banco de dados e a implementação prática utilizando MySQL. Agradecemos pela oportunidade de aplicar nossos conhecimentos e habilidades adquiridos ao longo do curso. Se você encontrar qualquer problema ou tiver perguntas, sinta-se à vontade para abrir uma issue no repositório ou entrar em contato com qualquer um dos contribuidores.
+This project provided a deeper understanding of database modeling and practical implementation using MySQL. We appreciate the opportunity to apply the knowledge and skills we acquired throughout the course. If you encounter any problems or have questions, feel free to open an issue in the repository or contact any of the contributors.
 
-## Contribuidores
+## Contributors
 
 
-### Líder
+### Leader
 
 
 ![Kauã](https://avatars.githubusercontent.com/u/112822162?v=4)
@@ -151,32 +167,32 @@ Desenvolvedor Fullstack - Líder
 - GitHub: [Kerubink](https://github.com/Kerubink)
 - LinkedIn: [Kauã Kelvyn](https://www.linkedin.com/in/kau%C3%A3-moraes-079288303/)
 
-### Comunicador
+### Comunicator
 
 
 ![Samuel](https://avatars.githubusercontent.com/u/105753686?v=4)
 **Samuel**
-Desenvolvedor Fullstack - Comunicador
+Desenvolvedor Fullstack - Communications
 
 - GitHub: [Samuel-Kepler](https://github.com/Samuel-Kepler)
 - LinkedIn: [Samuel](https://www.linkedin.com/in/samuel-ribeiro-loiola)
 
-### Gestor de Conhecimento
+### Knowledge Manager
 
 
 ![Miszael](https://avatars.githubusercontent.com/u/119391809?v=4)
 **Miszael**
-Desenvolvedor Fullstack - Gestor de Conhecimento
+Desenvolvedor Fullstack - Knowledge Manager
 
 - GitHub: [minu1123](https://github.com/minu1123)
 - LinkedIn: [Miszael](https://www.linkedin.com/in/miszael-costa-19b0b4251/)
 
-### Colaboradores
+### Contributors
 
 
 ![Ana](https://avatars.githubusercontent.com/u/97240075?v=4)
-**Ana**
-Desenvolvedora Fullstack - Colaboradora
+**Ana Caroline Neves**
+Fullstack Developer - Colaboradora
 
 - GitHub: [Ana-Neves](https://github.com/Ana-Neves)
 - LinkedIn: [Ana](https://www.linkedin.com/in/ana-caroline-neves-fullstack/)
@@ -184,7 +200,7 @@ Desenvolvedora Fullstack - Colaboradora
 
 ![Beatriz](https://avatars.githubusercontent.com/u/141242413?v=4)
 **Beatriz**
-Desenvolvedora Fullstack - Colaboradora
+Fullstack Developer - Colaboradora
 
 - GitHub: [l1Beatriz](https://github.com/l1Beatriz)
 - LinkedIn: [Beatriz](https://www.linkedin.com/in/beatrizsantos009?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
